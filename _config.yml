@@ -23,7 +23,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  YufeiCui
 
-
 # Build settings
 markdown: kramdown
 theme: minima
@@ -37,7 +36,6 @@ include:
 
 sass:
   sass_dir: _scss
-  style: :compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

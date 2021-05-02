@@ -7,6 +7,10 @@
     desc:
       csc: Variables, Expressions, Functions
       mat: Venn Diagrams and Predicate logic
+  ex:
+    - Ex1
+    - Ex2
+    - Ex3
 - week2:
   a:
     desc:
