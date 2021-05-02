@@ -2,11 +2,11 @@
   a:
     desc:
       csc: Setting up Python!
-      mat: Set theory and Logic
+      mat: Set Theory and Logic
   b: 
     desc:
       csc: Variables, Expressions, Functions
-      mat: Venn Diagrams and Predicate logic
+      mat: Venn Diagrams and Predicate Logic
   ex:
     - Ex1
     - Ex2
