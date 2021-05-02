@@ -1,0 +1,36 @@
+- week1: 
+  a:
+    desc:
+      csc: Setting up Python!
+      mat: Set theory and Logic
+  b: 
+    desc:
+      csc: Variables, Expressions, Functions
+      mat: Venn Diagrams and Predicate logic
+- week2:
+  a:
+    desc:
+      csc: If-Statements and Loops
+      mat: Proofs I
+  b: 
+    desc:
+      csc: Lists, Tuples, Sets, Dictionaries
+      mat: Proofs II
+- week3:
+  a:
+    desc:
+      csc: Files
+      mat: Big-Notations I
+  b: 
+    desc:
+      csc: Searching and Sorting
+      mat: Big-Notations II
+- week4:
+  a:
+    desc:
+      csc: Break!
+      mat: Break!
+  b: 
+    desc:
+      csc: Break!
+      mat: Break!
