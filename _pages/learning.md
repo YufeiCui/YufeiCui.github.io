@@ -21,13 +21,13 @@ permalink: /learning/
 <tr>
   <td rowspan="2" class="lecture-week">{{ forloop.index }}</td>
   <!-- Render with link if exists, otherwise regular text  -->
-  {% if csc_a %}
+  {% if csc_a and csc_a != blank %}
     <td><a href="{{ csc_a.path }}">{{ week.a.desc.csc }}</a></td>
   {% else %} 
     <td>{{ week.a.desc.csc }}</td>
   {% endif %}
 
-  {% if mat_a %}
+  {% if mat_a and mat_a != blank %}
     <td><a href="{{ mat_a.path }}">{{ week.a.desc.mat }}</a></td>
   {% else %} 
     <td>{{ week.a.desc.mat }}</td>
@@ -41,13 +41,13 @@ permalink: /learning/
   </td>
 </tr>
 <tr>
-  {% if csc_b %}
+  {% if csc_b and csc_b != blank %}
     <td><a href="{{ csc_b.path }}">{{ week.b.desc.csc }}</a></td>
   {% else %} 
     <td>{{ week.b.desc.csc }}</td>
   {% endif %}
 
-  {% if mat_b %}
+  {% if mat_b and mat_b != blank %}
     <td><a href="{{ mat_b.path }}">{{ week.b.desc.mat }}</a></td>
   {% else %} 
     <td>{{ week.b.desc.mat }}</td>
