@@ -18,16 +18,22 @@ permalink: /learning/
 {% assign mat_a = site.static_files | where: 'name', week.a.link.mat | first %} 
 {% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %} 
 {% assign mat_b = site.static_files | where: 'name', week.b.link.mat | first %} 
+
+{% assign tests = site.static_files | where: 'name', week.a.link.csc %} 
+{% for test in tests %}
+  {{test.name}} VS. {{wek.a.link.csc}}
+{% endfor %}
+
 <tr>
   <td rowspan="2" class="lecture-week">{{ forloop.index }}</td>
   <!-- Render with link if exists, otherwise regular text  -->
-  {% if csc_a and csc_a != blank %}
+  {% if csc_a %}
     <td><a href="{{ csc_a.path }}">{{ week.a.desc.csc }}</a></td>
   {% else %} 
     <td>{{ week.a.desc.csc }}</td>
   {% endif %}
 
-  {% if mat_a and mat_a != blank %}
+  {% if mat_a %}
     <td><a href="{{ mat_a.path }}">{{ week.a.desc.mat }}</a></td>
   {% else %} 
     <td>{{ week.a.desc.mat }}</td>
@@ -41,13 +47,13 @@ permalink: /learning/
   </td>
 </tr>
 <tr>
-  {% if csc_b and csc_b != blank %}
+  {% if csc_b %}
     <td><a href="{{ csc_b.path }}">{{ week.b.desc.csc }}</a></td>
   {% else %} 
     <td>{{ week.b.desc.csc }}</td>
   {% endif %}
 
-  {% if mat_b and mat_b != blank %}
+  {% if mat_b %}
     <td><a href="{{ mat_b.path }}">{{ week.b.desc.mat }}</a></td>
   {% else %} 
     <td>{{ week.b.desc.mat }}</td>
@@ -55,7 +61,3 @@ permalink: /learning/
 </tr>
 {% endfor %}
 </table>
-
-<!-- {{ site.content | append: '/' | append: site.data.locations.resume }} 
-
-[resume]({{ site.content | append: '/' | append: site.data.locations.resume }}) -->
