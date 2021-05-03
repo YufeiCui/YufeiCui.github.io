@@ -58,14 +58,6 @@ permalink: /learning/
       {% endfor %}
     </ul>
   </td>
-  <td>
-  {% assign tests = site.static_files | where: 'name', week.a.link.csc %} 
-  <ul>
-  {% for test in tests %}
-    <li>{{test.name}} VS. {{week.a.link.csc}}</li>
-  {% endfor %}
-  </ul>
-  </td>
 </tr>
 <tr>
   {% if csc_b %}
