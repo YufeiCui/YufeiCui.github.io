@@ -18,12 +18,6 @@ permalink: /learning/
 {% assign mat_a = site.static_files | where: 'name', week.a.link.mat | first %} 
 {% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %} 
 {% assign mat_b = site.static_files | where: 'name', week.b.link.mat | first %} 
-
-{% assign tests = site.static_files | where: 'name', week.a.link.csc %} 
-{% for test in tests %}
-  {{test.name}} VS. {{wek.a.link.csc}}
-{% endfor %}
-
 <tr>
   <td rowspan="2" class="lecture-week">{{ forloop.index }}</td>
   <!-- Render with link if exists, otherwise regular text  -->
@@ -44,6 +38,12 @@ permalink: /learning/
       <li>{{ ex }}</li>
       {% endfor %}
     </ul>
+  </td>
+  <td>
+  {% assign tests = site.static_files | where: 'name', week.a.link.csc %} 
+  {% for test in tests %}
+    {{test.name}} VS. {{week.a.link.csc}}
+  {% endfor %}
   </td>
 </tr>
 <tr>
