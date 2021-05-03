@@ -14,10 +14,19 @@ permalink: /learning/
 </thead>
 {% for week in site.data.lectures %}
 <!-- Get the file with the corresponding name from lectures.yml -->
-{% assign csc_a = site.static_files | where: 'name', week.a.link.csc | first %} 
-{% assign mat_a = site.static_files | where: 'name', week.a.link.mat | first %} 
-{% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %} 
-{% assign mat_b = site.static_files | where: 'name', week.b.link.mat | first %} 
+{% if week.a.link.csc %}
+  HELLO WORLD
+  {% assign csc_a = site.static_files | where: 'name', week.a.link.csc | first %} 
+{% endif %}
+{% if week.a.link.csc %}
+  {% assign mat_a = site.static_files | where: 'name', week.a.link.mat | first %} 
+{% endif %}
+{% if week.a.link.csc %}
+  {% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %} 
+{% endif %}
+{% if week.a.link.csc %}
+  {% assign mat_b = site.static_files | where: 'name', week.b.link.mat | first %} 
+{% endif %}
 <tr>
   <td rowspan="2" class="lecture-week">{{ forloop.index }}</td>
   <!-- Render with link if exists, otherwise regular text  -->
