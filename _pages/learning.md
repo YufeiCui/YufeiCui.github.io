@@ -41,9 +41,11 @@ permalink: /learning/
   </td>
   <td>
   {% assign tests = site.static_files | where: 'name', week.a.link.csc %} 
+  <ul>
   {% for test in tests %}
-    {{test.name}} VS. {{week.a.link.csc}}
+    <li>{{test.name}} VS. {{week.a.link.csc}}</li>
   {% endfor %}
+  </ul>
   </td>
 </tr>
 <tr>
