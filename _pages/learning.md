@@ -13,20 +13,30 @@ permalink: /learning/
 </tr>
 </thead>
 {% for week in site.data.lectures %}
+
+<!-- Set the variables to nil here to erase previous iteration -->
+{% assign csc_a = nil %}
+{% assign mat_a = nil %}
+{% assign csc_b = nil %}
+{% assign mat_b = nil %}
+
 <!-- Get the file with the corresponding name from lectures.yml -->
 {% if week.a.link.csc %}
-  HELLO WORLD
   {% assign csc_a = site.static_files | where: 'name', week.a.link.csc | first %} 
 {% endif %}
-{% if week.a.link.csc %}
+
+{% if week.a.link.mat %}
   {% assign mat_a = site.static_files | where: 'name', week.a.link.mat | first %} 
 {% endif %}
-{% if week.a.link.csc %}
-  {% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %} 
+
+{% if week.b.link.csc %}
+  {% assign csc_b = site.static_files | where: 'name', week.b.link.csc | first %}
 {% endif %}
-{% if week.a.link.csc %}
+
+{% if week.b.link.mat %}
   {% assign mat_b = site.static_files | where: 'name', week.b.link.mat | first %} 
 {% endif %}
+
 <tr>
   <td rowspan="2" class="lecture-week">{{ forloop.index }}</td>
   <!-- Render with link if exists, otherwise regular text  -->
