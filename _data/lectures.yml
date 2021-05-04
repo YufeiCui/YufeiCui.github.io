@@ -14,9 +14,8 @@
       csc: 
       mat: 
   ex:
-    - Ex1
+    - Ex1t 
     - Ex2
-    - Ex3
 - week2:
   a:
     desc:
