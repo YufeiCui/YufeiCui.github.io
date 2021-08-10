@@ -1,4 +1,4 @@
-- week1: 
+- week1:
   a:
     desc:
       csc: Setting up Python!
@@ -6,22 +6,22 @@
     link:
       csc: csc1a.pdf
       mat: mat1a.pdf
-  b: 
+  b:
     desc:
       csc: Variables, Expressions, Functions
-      mat: Venn Diagrams and Predicate Logic
+      mat: Statements, Truth Tables, and Quantifiers
     link:
-      csc: 
-      mat: 
+      csc:
+      mat:
   ex:
-    - Ex1t 
+    - Ex1
     - Ex2
 - week2:
   a:
     desc:
       csc: If-Statements and Loops
       mat: Proofs I
-  b: 
+  b:
     desc:
       csc: Lists, Tuples, Sets, Dictionaries
       mat: Proofs II
@@ -30,7 +30,7 @@
     desc:
       csc: Files
       mat: Big-Notations I
-  b: 
+  b:
     desc:
       csc: Searching and Sorting
       mat: Big-Notations II
@@ -39,7 +39,7 @@
     desc:
       csc: Break!
       mat: Break!
-  b: 
+  b:
     desc:
       csc: Break!
       mat: Break!

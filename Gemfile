@@ -36,3 +36,9 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # CVE-2021-28834
 gem "kramdown", ">= 2.3.1"
+
+# GHSA-7rrm-v45f-jp64
+gem "nokogiri", ">= 1.11.4"
+
+# GHSA-jxhc-q857-3j6g
+gem "addressable", ">= 2.8.0"
