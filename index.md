@@ -8,7 +8,7 @@ title: Home
 
 Hi, this is the page you should bookmark and visit almost every single day.
 Announcements and slides will be updated here. To contact me you can message me
-at `firstname_lastname@hotmail.com`. I really hope you enjoy your stay here. 
+at `firstname_lastname@hotmail.com`. I really hope you enjoy your stay here.
 Let's have an adventureful time!
 
 To find the lectures, click the `Learning` tab on the top right.
