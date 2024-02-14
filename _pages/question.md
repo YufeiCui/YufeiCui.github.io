@@ -42,6 +42,6 @@ I know I've already asked but I saw someone used an Instagram post to ask... and
 <dialog class="modalWrapper" id="yesModal">
   <form class="modal" method="dialog">
     <div class="happypuppy">GOTEEEEEEEEEM :P Love you &lt;3 :)</div>
-    <img src="{{ site.baseurl }}/assets/images/collage.jpeg">
+    <iframe src="https://drive.google.com/file/d/1cOB1AnlNAmvnpYB7qfC3T7bcspj7Z4qT/preview" width="640" height="480" allow="autoplay"></iframe>
   </form>
 </dialog>
